@@ -8,7 +8,7 @@ const startVideo = document.getElementById('startVideo');
 const endVideo = document.getElementById('endVideo');
 
 
-peer = new Peer('dspChatrecv');
+peer = new Peer('dspChatrecv', { secure: false });
 
 peer.on('open', (id) => {
     console.log('My ID is: ' + id);
