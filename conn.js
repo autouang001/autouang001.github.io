@@ -7,7 +7,7 @@ const remoteVideo = document.getElementById('remoteVideo');
 const startVideo = document.getElementById('startVideo');
 const endVideo = document.getElementById('endVideo');
 
-peer = new Peer('dspChatconn');
+peer = new Peer('dspChatconn', { secure: false });
 
 peer.on('open', (id) => {
     console.log('My ID is: ' + id);
